@@ -1,9 +1,6 @@
 package DBQueries;
 
-import java.time.format.DateTimeFormatter;
-import java.time.LocalDateTime;
-import java.io.PrintWriter;
-import java.io.FileWriter;
+
 import java.sql.*;
 
 public class MysqlCon {
@@ -14,7 +11,7 @@ public class MysqlCon {
         while(count<2) {
             try{
                 Connection con=DriverManager.getConnection(
-                        "jdbc:mysql://localhost:3306/classified","root","MySQL123");
+                        "jdbc:mysql://database-1.cda7tdexq29d.us-east-2.rds.amazonaws.com:3306/classified","root","root12345");
                 //here Classfield is database name, root is username and password is bordoloa
                 count++;
                 String msg="Success";

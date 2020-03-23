@@ -1,6 +1,9 @@
 package adminPackage;
 
 import DBQueries.DBQueryExecuter;
+//import app.ClassifiedApp;
+//import service.ClassifiedService;
+//import service.impl.ClassifiedServiceImpl;
 
 import java.util.Scanner;
 
@@ -52,10 +55,12 @@ public class ValidateLogin implements ValidateLoginInterface {
                             displayAndUpdateClassifieds(sc,ch);
                             break;
                         case 3:
+                            ////ClassifiedService classifiedService = new ClassifiedServiceImpl();
                             System.out.println("1. Enter \"A\" to Post a Classified");
                             System.out.println("1. Enter \"B\" to Remove a Classified");
                             ch = sc.next();
                             if("A".equalsIgnoreCase(ch)) {
+                                //////ClassifiedApp.createClassified(classifiedService, sc);
                                 System.out.println("Classified Added Successfully!");
                                 System.out.println("");
                                 Thread.sleep(400);
